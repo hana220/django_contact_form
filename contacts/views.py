@@ -50,7 +50,7 @@ class CorporateContactConfirm(generic.FormView):
     form_class = CorporateContactForm
  
     def form_valid(self, form):
-        return render(self.request, 'contacts/corporate_contact_ conﬁrm.html', {'form': form})
+        return render(self.request, 'contacts/corporate_contact_conﬁrm.html', {'form': form})
  
     def form_invalid(self, form):
         return render(self.request, CorporateContactInput.template_name, {'form': form})
