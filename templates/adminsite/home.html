@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+<body>
+<p>ログイン完了</p>
+<p>・<a href="{% url 'adminsite:individual_contacts_list' %}">個人お問合せ一覧</a></p>
+<p>・<a href="{% url 'adminsite:corporate_contacts_list' %}">企業問合せ一覧</a></p>
+<a href="{% url 'adminsite:logout' %}">Logout</a>
+</body>
+ 
+{% endblock %}

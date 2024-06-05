@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+<h2>企業問い合わせ一覧</h2>
+<table>
+    <tr>
+        <th>企業名  </th>
+        <td>担当者名　</td>
+        <td>お問合せ内容　</td>
+        <td>お問合せ日時　</td>
+        <td>担当者メールアドレス　</td>
+        <td>担当者電話番号　</td>
+ 
+    </tr>
+    {% for contact in corporatecontact_list %}
+    <tr>
+        <th><span class="font-weight-bold">　</span></th>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+    </tr>
+    {% endfor %}
+</table>
+ 
+{% endblock %}
