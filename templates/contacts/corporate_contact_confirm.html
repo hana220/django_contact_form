@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}corporate contact form confirm{% endblock %}
+ 
+{% block content %}
+    {% for field in form %}
+        <div class="form-group">
+            <label for=""></label>
+             
+        </div>
+    {% endfor %}
+ 
+    <form action="{% url 'contacts:corporate_input' %}" method="POST">
+        <button type="submit" class="btn btn-primary btn-lg">戻る</button>
+        {% for field in form %}{% endfor %}
+        {% csrf_token %}
+    </form>
+    <hr>
+    <form action="{% url 'contacts:corporate_create' %}" method="POST">
+        <button type="submit" class="btn btn-primary btn-lg">送信</button>
+        {% for field in form %}{% endfor %}
+        {% csrf_token %}
+    </form>
+{% endblock %}

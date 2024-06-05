@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>お問い合わせフォーム</h1>
+<a href="{% url 'contacts:individual_input' %}"><p>個人の方はこちら</p></a>
+<a href="{% url 'contacts:corporate_input' %}"><p>法人の方はこちら</p></a>
+{% endblock %}
